@@ -6,19 +6,19 @@ import numpy as np
 import pandas as pd
 
 ########################################## Numeric constant
-pi       =np.pi            #円周率
-Bohr     =0.5292           #[Å]
-Hartree  =27.21            #[eV]
-AtomCurr =0.6623           #[A]
-AtomTime =0.02419          #[fs]
-AtomField=51.422067        #[V/Å]
-Plank    =4.13566777       #[eV・fs]
-e        =1.602176634e-19  #電気素量[C]
+pi        = np.pi            #円周率
+Bohr      = 0.5292           #[Å]
+Hartree   = 27.21            #[eV]
+AtomCurr  = 0.6623           #[A]
+AtomTime  = 0.02419          #[fs]
+AtomField = 51.422067        #[V/Å]
+Plank     = 4.13566777       #[eV・fs]
+e         = 1.602176634e-19  #電気素量[C]
 
 
 ########################################## Function
 
-def calc_energy(directory,file,volume,Natom,unit):
+def calc_energy(directory, file, volume, Natom, unit):
     #Optical energy absorption
     #引数 {volume:セル体積[Å^3], Natom:セルに含まれる原子数, unit:'a.u.'or'A_eV_fs'}
     
