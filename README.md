@@ -8,6 +8,8 @@ It provides tools for visualizing and interpreting simulation outputs from SALMO
 
 ## **Features**
 - Parse and process SALMON output files.
+- Laser electric field, laser intensity, current density.
+- Energy transfer from laser electric field to materials.
 
 
 ## **Installation**
