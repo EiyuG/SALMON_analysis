@@ -55,5 +55,3 @@ def calc_energy(directory, file, volume, Natom, unit):
     print(directory, f"{final_Wt_volume:.16f} [eV/Å^3], {final_Wt_atom:.16f} [eV/atom]")
 
     return t, Wt_atom, Wt_volume
-
-print('done')
