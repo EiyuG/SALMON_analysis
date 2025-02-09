@@ -27,7 +27,7 @@ epsilon0  = 8.8542e-14       #真空の誘電率[F/cm]=[C/(V・cm)]
 ########################################## Function
 def calc_Et_It_Jt(directory, file, unit):
     #外部電場,レーザー強度の概形,電流密度を計算
-    #引数 {unit:'a.u.'or'A_eV_fs', axis:'x'or'y'or'z'}
+    #引数 {unit:'a.u.'or'A_eV_fs'}
     
     #データ読込
     head_s = 7  #ヘッダーの行数
