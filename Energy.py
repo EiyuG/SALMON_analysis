@@ -46,6 +46,7 @@ def calc_energy(directory,file,volume,Natom,unit):
 
     #原子単位系の場合
     if(unit == 'a.u.'):
+        t*=AtomTime #[fs]
         Wt_volume = (Wtx + Wty + Wtz) * Hartree  #[eV/Å^3]
         Wt_atom = Wt_volume * volume / Natom     #[eV/atom]
 
@@ -54,6 +55,6 @@ def calc_energy(directory,file,volume,Natom,unit):
 
     print(directory, f"{final_Wt_volume:.16f} [eV/Å^3], {final_Wt_atom:.16f} [eV/atom]")
 
-    return
+    return t, Wt_atom, Wt_volume
 
 print('done')
