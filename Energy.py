@@ -17,7 +17,6 @@ e         = 1.602176634e-19  #電気素量[C]
 
 
 ########################################## Function
-
 def calc_energy(directory, file, volume, Natom, unit):
     #Optical energy absorption
     #引数 {volume:セル体積[Å^3], Natom:セルに含まれる原子数, unit:'a.u.'or'A_eV_fs'}
