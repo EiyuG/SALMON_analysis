@@ -58,7 +58,6 @@ def calc_Et_It_Jt(directory, file, unit):
     #強度(電場の2乗の包絡線)を計算
     Itx, Ity, Itz = Etx**2, Ety**2, Etz**2  #[V^2/Å^2]
     order=10 #包絡線の滑らかさ
-
     for I, max_ids in zip([Itx, Ity, Itz], [argrelextrema(It, np.greater, order=order)[0] for It in [Itx, Ity, Itz]]):
         if max_ids.size > 0:
             I[:] = CubicSpline(t[max_ids], I[max_ids])(t)  # スプライン補間
