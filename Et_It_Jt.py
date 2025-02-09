@@ -1,3 +1,7 @@
+# Calculate the external electric field, laser intensity, and current density
+
+
+
 ########################################## Modules
 import math
 import numpy as np
