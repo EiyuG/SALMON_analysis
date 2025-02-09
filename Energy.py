@@ -20,11 +20,11 @@ e        =1.602176634e-19  #電気素量[C]
 
 def calc_energy(directory,file,volume,Natom,unit):
     #Optical energy absorptionを計算
-    #引数 {volume:セル体積, Natom:セルに含まれる原子数, unit:'a.u.'or'A_eV_fs'}
+    #引数 {volume:セル体積[Å^3], Natom:セルに含まれる原子数, unit:'a.u.'or'A_eV_fs'}
     
     #データ読込
     head_s = 7  #ヘッダーの行数
-    file_path = f'../../{directory}/{file}'
+    file_path = f'../../{directory}/{file}' #適宜変更
     data = pd.read_csv(file_path, sep='\s+', skiprows=head_s, header=None, dtype=np.float64).values
     
     #時間、外部電場、電流密度を取得
