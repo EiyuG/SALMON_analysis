@@ -2,8 +2,14 @@
 
 
 ########################################## Modules
+import math
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.signal import argrelextrema
+from scipy.interpolate import CubicSpline
+from matplotlib.ticker import MultipleLocator
+
 
 ########################################## Numeric constant
 pi        = np.pi            #円周率
@@ -14,6 +20,8 @@ AtomTime  = 0.02419          #[fs]
 AtomField = 51.422067        #[V/Å]
 Plank     = 4.13566777       #[eV・fs]
 e         = 1.602176634e-19  #電気素量[C]
+c         = 2.9979e10        #光速[cm/s]
+epsilon0  = 8.8542e-14       #真空の誘電率[F/cm]=[C/(V・cm)]
 
 
 ########################################## Function
