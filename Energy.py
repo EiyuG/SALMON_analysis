@@ -2,26 +2,8 @@
 
 
 ########################################## Modules
-import math
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from matplotlib.ticker import MultipleLocator
-
-
-########################################## Setting of figures
-g1=20    #凡例の文字の大きさ
-g2=2     #枠線の太さ
-g3=20    #目盛ラベルの文字の大きさ
-g4=5     #目盛線の長さ
-g5=20    #タイトルの文字の大きさ
-g6=20    #x軸とy軸のラベルの文字の大きさ
-g7=1.5   #プロットする点の大きさ
-g8=1.5   #プロットする線の太さ
-g9=8     #figの横幅
-g10=4.5  #figの縦幅
-color=['Green','Indigo','DarkOrange','Magenta','Blue','Red','DeepSkyBlue','Gold','Gray']
-
 
 ########################################## Numeric constant
 pi       =np.pi            #円周率
