@@ -69,5 +69,3 @@ def calc_Et_It_Jt(directory, file, unit):
     Itz *= conversion_factor_I
 
     return t, Etx, Ety, Etz, Itx, Ity, Itz, Jtx, Jty, Jtz
-
-print('done')
