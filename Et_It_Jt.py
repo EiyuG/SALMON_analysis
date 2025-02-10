@@ -50,7 +50,7 @@ def calc_Et_It_Jt(directory, file, unit):
         Etx *= AtomField  #[V/Å]
         Ety *= AtomField 
         Etz *= AtomField
-        conversion_factor_J_au = -e * 1e15 / (AtomTime * Bohr**2)   #[A/Å^2]
+        conversion_factor_J_au = -e * 1e15 / (AtomTime * Bohr**2)   #[A/Å^2] #ここ見直す
         Jtx *= conversion_factor_J_au
         Jty *= conversion_factor_J_au
         Jtz *= conversion_factor_J_au
