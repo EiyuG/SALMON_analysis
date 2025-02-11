@@ -1,11 +1,6 @@
 ########################################## Modules
-import math
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.signal import argrelextrema
-from scipy.interpolate import CubicSpline
-from matplotlib.ticker import MultipleLocator
 
 
 ########################################## Numeric constant
